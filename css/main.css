@@ -32,11 +32,14 @@ nav {
   color: #FFF;
 }
 nav ul {
+  list-style-type: none;
   padding-left: 15px;
   margin-bottom: 0;
 }
 nav li {
+  display: inline-block;
   font-variant: small-caps;
+  padding: 0.5em;
 }
 nav a {
   transition: all 0.3s;
@@ -54,12 +57,18 @@ nav a:focus {
 header {
   padding-top: 3em;
   padding-right: 1em;
-  background-image: url(../img/background-sm.jpg);
-  min-height: 550px;
+  background-image: url(../img/background-lg.jpg);
+  background-size: cover;
+  min-height: 400px;
   color: #FFF;
 }
 header h1 {
   font-size: 3em;
+  text-align: right;
+}
+
+.motto {
+  text-align: right;
 }
 
 section {
@@ -71,7 +80,9 @@ section {
   font-size: 1.25em;
   padding-top: 3em;
   padding-bottom: 3em;
+  text-align: center;
 }
+
 #headline svg {
   display: inline-block;
   height: 1.5em;
@@ -81,25 +92,43 @@ section {
 
 #cafe {
   text-align: center;
+  background-color: lightgrey;
 }
 
 dd {
   margin-left: 1em;
   font-style: italic;
 }
+
+#story {
+  background-color: lightgrey;
+  overflow: auto;
+}
+
 #story img {
   float: right;
   max-height: 400px;
   margin-left: 1em;
+  border-radius: 10px;
 }
 
 footer {
+  clear:both;
   padding-top: 1em;
   padding-bottom: 0.5em;
   font-size: 12px;
+  border-top: 3px solid orange;
   background-color: #afb3c2;
 }
 
+footer > p:last-child {
+  text-align: right;
+}
+
 #headline p {
-  text-align: left;
+  text-align: center;
+}
+
+#menu h3, dl{
+  padding-left: 15%;
 }
